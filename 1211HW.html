@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+     function guess(s){
+     	window.prompt(s);
+     }
+     function result(a,b){
+     	if(a!=b){
+     		value=window.prompt("NO!!!Please enter again:")
+     	}
+     	else{
+     		alert("Great!!!");
+     	}
+     }
+	var input;
+	input = guess("Please input a number between 1 and 10:");
+	var value=parseInt(input);
+	var rand=Math.floor((Math.random()*10)+1);
+
+	while(value!=rand){
+	    result(value,rand);
+	    
+	}
+	result(value,rand);
+
+
+	</script>
+
+</body>
+</html>
